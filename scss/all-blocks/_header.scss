@@ -25,6 +25,7 @@ nav {
             height: 50vh;
             top: 69px;
             transform: translateY(-150%);
+            left: 0;
         }
 
         
@@ -94,4 +95,66 @@ nav {
 
 .active {
     transform: translateY(0);
+}
+
+
+.hero {
+    max-width: 1440px;
+    height: 720px;
+    margin: auto;
+    background-position: center;
+    background-image: url(../../images/hero.png);
+    background-repeat: no-repeat;
+    padding: 100px 0 0 0;
+
+    @include min-tablet {
+        text-align: center;
+        padding: 70px 0 0 0;
+    }
+
+    .span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .spann {
+        font-weight: 600;
+    }
+
+    h1 {
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 64px;
+        max-width: 800px;
+        color: #fff;
+        letter-spacing: -2px;
+        padding: 24px 0;
+
+        @include min-tablet {
+            font-size: 40px;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+
+    .span1 {
+        color: $button-bg;
+    }
+
+    .hero-text {
+        max-width: 700px;
+        padding: 16px 0 48px 0;
+    }
+
+
 }

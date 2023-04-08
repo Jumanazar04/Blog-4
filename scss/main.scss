@@ -12,12 +12,26 @@
 
 body {
     font-family: 'Inter';
+    background: #E5E5E5;
 }
 
 .container{
     margin: 0 auto;
     max-width: 1320px;
     padding: 0 20px;
+}
+
+.btn {
+    max-width: 220px;
+    padding: 10px 30px;
+    background-color: $button-bg;
+    border: 1px solid $button-bg;
+
+     a {
+        color: $nav-bg;
+        font-weight: 600
+     }
+    
 }
 
 
