@@ -1,0 +1,12 @@
+.row>* {
+    flex-shrink: 0;
+    max-width: 200px;
+    min-width: 50px;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.box1 {
+    margin-top: 100px;
+}

@@ -1,0 +1,149 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff"), url("../fonts/inter-v12-latin-regular.ttf") format("truetype"), url("../fonts/inter-v12-latin-regular.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v12-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-600.woff2") format("woff2"), url("../fonts/inter-v12-latin-600.woff") format("woff"), url("../fonts/inter-v12-latin-600.ttf") format("truetype"), url("../fonts/inter-v12-latin-600.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* sen-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sen-v7-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/sen-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/sen-v7-latin-regular.woff2") format("woff2"), url("../fonts/sen-v7-latin-regular.woff") format("woff"), url("../fonts/sen-v7-latin-regular.ttf") format("truetype"), url("../fonts/sen-v7-latin-regular.svg#Sen") format("svg"); /* Legacy iOS */
+}
+/* sen-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/sen-v7-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/sen-v7-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/sen-v7-latin-700.woff2") format("woff2"), url("../fonts/sen-v7-latin-700.woff") format("woff"), url("../fonts/sen-v7-latin-700.ttf") format("truetype"), url("../fonts/sen-v7-latin-700.svg#Sen") format("svg"); /* Legacy iOS */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter";
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #232536;
+  padding: 20px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__card {
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+@media (max-width: 768px) {
+  .menu__card {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (max-width: 660px) {
+  .menu__card {
+    position: absolute;
+    flex-direction: column;
+    background-color: #232536;
+    justify-content: center;
+    align-items: center;
+    row-gap: 35px;
+    width: 60%;
+    height: 50vh;
+    top: 69px;
+    transform: translateY(-150%);
+  }
+}
+.menu__card-box {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media (max-width: 660px) {
+  .menu__card-box {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .menu__card-box {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+.menu__card-box a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.8;
+}
+@media (max-width: 660px) {
+  .menu__card-box a {
+    font-size: 30px;
+  }
+}
+
+.menu__box-btn {
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Sen";
+}
+.menu__box-btn a {
+  color: #232536;
+}
+
+.ham_btn {
+  display: none;
+  background: transparent;
+}
+@media (max-width: 660px) {
+  .ham_btn {
+    display: block;
+  }
+}
+.ham_btn img {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.active {
+  transform: translateY(0);
+}/*# sourceMappingURL=main.css.map */
