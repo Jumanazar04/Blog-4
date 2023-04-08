@@ -12,12 +12,30 @@
     .blogs__card {
         display: flex;
         justify-content: space-between;
+
+        @include large-tablet {
+            flex-direction: column;
+            row-gap: 20px;
+        }
         
     }
 
     .blogs__cards-box {
         padding: 0 15px 0 0;
         max-width: 410px;
+
+        @include large-tablet {
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            column-gap: 40px;
+        }
+
+        @include large-min-tablet {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
     }
     span {
         display: inline-block;
@@ -26,6 +44,13 @@
         line-height: 20px;
         color: #4C4C4C;
         padding: 32px 0 16px 0;
+
+        @include large-tablet {
+            padding: 0 0 10px 0;
+        }
+        @include large-min-tablet {
+            padding: 20px 0 10px 0;
+        }
     }
 
     h4 {
@@ -49,6 +74,13 @@
     }
 
     img {
-        max-width: 405px;
+        max-width: 350px;
+
+        @include large-tablet {
+            max-width: 450px;
+        }
+        @include large-min-tablet {
+            max-width: 400px;
+        }
     }
 }
