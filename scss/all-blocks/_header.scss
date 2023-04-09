@@ -18,14 +18,14 @@ nav {
             position: absolute;
             flex-direction: column;
             background-color: $nav-bg;
-            justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             row-gap: 35px;
             width: 60%;
             height: 50vh;
             top: 69px;
             transform: translateY(-150%);
             left: 0;
+            padding: 40px 0 0 40px;
         }
 
         
@@ -39,6 +39,7 @@ nav {
         @include min-tablet {
             flex-direction: column;
             row-gap: 30px;
+            align-items: flex-start;
         }
 
         @include tablet {

@@ -89,14 +89,14 @@ nav {
     position: absolute;
     flex-direction: column;
     background-color: #232536;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     row-gap: 35px;
     width: 60%;
     height: 50vh;
     top: 69px;
     transform: translateY(-150%);
     left: 0;
+    padding: 40px 0 0 40px;
   }
 }
 .menu__card-box {
@@ -109,6 +109,7 @@ nav {
   .menu__card-box {
     flex-direction: column;
     row-gap: 30px;
+    align-items: flex-start;
   }
 }
 @media (max-width: 768px) {
@@ -248,7 +249,7 @@ nav {
          column-gap: 40px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 820px) {
   .blog .blogs__cards-box {
     flex-direction: column;
     align-items: flex-start;
@@ -267,7 +268,7 @@ nav {
     padding: 0 0 10px 0;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 820px) {
   .blog span {
     padding: 20px 0 10px 0;
   }
@@ -298,8 +299,81 @@ nav {
     max-width: 450px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 820px) {
   .blog img {
     max-width: 350px;
   }
+}
+
+.catagory h2 {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.catagory__card {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.catagory__card-box {
+  width: 290px;
+  height: 220px;
+  border: 1px solid #232536;
+  border-radius: 3px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  transition: 0.8s;
+}
+.catagory__card .icon__card {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  height: 50px;
+  border: none;
+  background-color: #E5E5E5;
+}
+
+.catagory__card-box:hover {
+  background-color: #FFD050;
+  border: 1px solid #FFD050;
+}
+
+.footer {
+  background: #232536;
+  padding: 50px 0;
+}
+.footer__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .footer__card {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: flex-start;
+  }
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.footer__box p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.7;
 }/*# sourceMappingURL=main.css.map */
