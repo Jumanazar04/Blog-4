@@ -384,5 +384,6 @@ nav {
   height: 582px;
   background-image: url("../../images/photo11.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
