@@ -305,6 +305,22 @@ nav {
   }
 }
 
+.search__box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .search__box {
+    flex-direction: column;
+  }
+}
+.search__box img {
+  width: 350px;
+}
+
 .catagory h2 {
   font-family: "Sen";
   font-weight: 700;
@@ -385,4 +401,62 @@ nav {
   background-image: url("../../images/photo11.jpg");
   background-repeat: no-repeat;
   background-position: right;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.blogs__form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 10px;
+}
+.blogs input,
+.blogs button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.startup {
+  padding: 50px;
+  text-align: center;
+}
+.startup__card {
+  text-align: center;
+}
+.startup h2 {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+.startup p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6D6E76;
+  max-width: 515px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+.startup span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #232536;
+}
+
+.search {
+  background-color: #fff;
+  padding: 100px 0;
+}
+.search .form__search {
+  width: 100%;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
