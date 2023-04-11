@@ -17,7 +17,7 @@ function datafetch () {
         method: 'GET',
         params: { q: 'Bitcoin', lang: 'en', sort_by: 'relevancy', page: '1' },
         headers: {
-            'x-api-key': 'OdlZZTmzHyb_fqrA8ERzkxqYYu0OmukuMqX2r4p8nOY'
+            'x-api-key': 'lZvoG8aeAeTBVHR-3NAXqNJs3dOui47f42pUSUKJkD8'
         },
     
     };//4w3vSMVLAar5GOM7-IC5P0T7oviH2NIoJk6Xo_wC04s
@@ -27,7 +27,7 @@ function datafetch () {
     .then(response => response.json())
     .then(data => {
         const sliced = data.articles.slice(1,5);
-        console.log(sliced);
+        // console.log(sliced);
         card.innerHTML = '';
         sliced.map((Apple) => {
             const { media, author, title, summary } = Apple;

@@ -9,16 +9,16 @@
         padding: 94px 0 64px 0;
     }
 
-    .blogs__card {
-        display: flex;
-        justify-content: space-between;
+    // .blogs__card {
+    //     display: flex;
+    //     justify-content: space-between;
 
-        @include large-tablet {
-            flex-direction: column;
-            row-gap: 20px;
-        }
+    //     @include large-tablet {
+    //         flex-direction: column;
+    //         row-gap: 20px;
+    //     }
         
-    }
+    // }
 
     .blogs__cards-box {
         padding: 0 15px 0 0;

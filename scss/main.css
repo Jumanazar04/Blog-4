@@ -225,16 +225,6 @@ nav {
   letter-spacing: -2px;
   padding: 94px 0 64px 0;
 }
-.blog .blogs__card {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 1120px) {
-  .blog .blogs__card {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-}
 .blog .blogs__cards-box {
   padding: 0 15px 0 0;
   max-width: 410px;
