@@ -2,10 +2,10 @@ const form = document.querySelector('.blogs__form'),
 Nname = document.querySelector('.fulname'),
 inTitle = document.querySelector('.input__title'),
 result = document.querySelector('.form__results'),
-btn = document.querySelector('.btn1'),
+btn2 = document.querySelector('.btn1'),
 inText = document.querySelector('.input__text');
 
-btn.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault    
     const h2 = document.createElement('h2');
     h2.textContent = Nname.value;
@@ -18,6 +18,6 @@ btn.addEventListener('click', (e) => {
     console.log('ok');
 
 
-    btn.reset();
+    
 
 })

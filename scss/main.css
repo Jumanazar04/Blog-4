@@ -44,7 +44,6 @@
 
 body {
   font-family: "Inter";
-  background: #E5E5E5;
 }
 
 .container {
@@ -167,7 +166,7 @@ nav {
   height: 720px;
   margin: auto;
   background-position: center;
-  background-image: url(../../images/hero.png);
+  background-image: url(../images/hero.png);
   background-repeat: no-repeat;
   padding: 100px 0 0 0;
 }
@@ -398,11 +397,67 @@ nav {
   margin: 50px 0;
   max-width: 1280px;
   height: 582px;
-  background-image: url("../../images/photo11.jpg");
+  background-image: url("../images/photo11.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  -o-object-position: center;
-     object-position: center;
+}
+
+.register {
+  margin: 100px 0;
+}
+.register h2 {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-bottom: 60px;
+}
+.register .form__register {
+  width: 769px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+@media (max-width: 820px) {
+  .register .form__register {
+    width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .register .form__register {
+    width: 330px;
+  }
+}
+.register .form__register input {
+  padding: 18px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  border-radius: 2px;
+}
+.register__btn {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232536;
+  background: #FFD050;
+  border: 1px solid #FFD050;
+  padding: 18px;
+  transition: 1s;
+}
+
+.register__btn:hover {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+}
+
+.active1 {
+  border: 1px solid red;
 }
 
 .blogs__form {
@@ -459,4 +514,106 @@ nav {
 .search .form__search {
   width: 100%;
   padding: 10px;
+}
+
+.about1 {
+  margin: 40px auto;
+  padding: 80px 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E5E5E5;
+}
+@media (max-width: 768px) {
+  .about1 {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}
+.about1__cards {
+  max-width: 515px;
+}
+.about1 span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #232536;
+}
+.about1 h3 {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #232536;
+  padding: 24px 0 16px 0;
+}
+.about1 p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6D6E76;
+}
+
+.team1__card1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin: 40px 0;
+}
+@media (max-width: 820px) {
+  .team1__card1 {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+.team1__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (max-width: 820px) {
+  .team1__card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.team1 h3 {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+.team1 span {
+  font-family: "Sen";
+  font-weight: 700;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232536;
+  padding: 16px 0;
+}
+.team1 p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+}
+.team1 img {
+  max-width: 624px;
+}
+@media (max-width: 1120px) {
+  .team1 img {
+    max-width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .team1 img {
+    width: 350px;
+  }
 }/*# sourceMappingURL=main.css.map */

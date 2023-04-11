@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog post</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
+    
+       
     <header>
         <nav>
             <div class="container">
@@ -16,12 +18,12 @@
                     <div class="menu__card">
                         <ul class="menu__card-box">
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./about.html" >About Us</a></li>
-                            <li><a href="./registir.html" >Register</a></li>
+                            <li><a href="./blog.html" target="_blank">Blog</a></li>
+                            <li><a href="./about.html" target="_blank">About Us</a></li>
+                            <li><a href="./registir.html">Register</a></li>
                         </ul>
                         <button class="menu__box-btn">
-                            <a href="./login.html">Log In</a>
+                            <a href="#">Log In</a>
                         </button>
                     </div>
                     <button class="ham_btn" type="submit">
@@ -32,32 +34,26 @@
                 
             </div>
         </nav>
-
-        <div class="hero1">
-            <div class="container">
-                <div class="hero1__img">
-
-                </div>
-            </div>
-        </div>
     </header>
 
+
     <main>
-        <section class="blogs">
-            <div class="container">
-                <form class="blogs__form" action="#" >
-                    <input type="text" name="Fullname" placeholder="Enter your full name" class="fulname">
-                    <input type="text" class="input__title" placeholder="Enter your text">
-                    <input type="text" class="input__text" placeholder="Text">
-                    <button class="btn1">Submit</button>
-                </form>
-            </div>
-        </section>
+
         <section>
             <div class="container">
-                <div class="form__results"></div>
+                <div class="register">
+                    <h2>Register</h2>
+                    <form class="form__register" action="#">
+                        <input type="text" class="Uname" placeholder="Username">
+                        <input type="password" class="Password" placeholder="Password" name="" id="">
+                        <button class="register__btn">
+                            Log in
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -73,7 +69,8 @@
             </div>
         </div>
     </footer>
-
     <script src="./js/main.js"></script>
+
+
 </body>
 </html>

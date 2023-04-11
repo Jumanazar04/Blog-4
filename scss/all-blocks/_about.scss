@@ -1,0 +1,108 @@
+.about1 {
+    margin: 40px auto;
+    padding: 80px 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color:  #E5E5E5;
+
+    @include tablet {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    &__cards {
+        max-width: 515px;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #232536;
+    }
+
+    h3 {
+        font-family: 'Sen';
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -1px;
+        color: #232536;
+        padding: 24px 0 16px 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+        color: #6D6E76;
+    }
+}
+
+.team1 {
+
+    &__card1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+        margin: 40px 0;
+
+        @include large-min-tablet{
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+
+        @include large-min-tablet {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+      
+    }
+    h3 {
+        font-family: 'Sen';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: #232536;
+    }
+
+    span {
+        font-family: 'Sen';
+        font-weight: 700;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 32px;
+        color: #232536;
+        padding: 16px 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+        color: #232536;
+    }
+
+    img {
+        max-width: 624px;
+
+        @include large-tablet {
+            max-width: 500px;
+        }
+
+        @include phone {
+            width: 350px;
+        }
+    }
+}
